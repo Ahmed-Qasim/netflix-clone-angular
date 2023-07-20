@@ -1,0 +1,17 @@
+<app-header></app-header>
+<br><br><br>
+<div class="row ">
+  <div class=" text-center" >
+    <h1 style="color:beige;">Our Team</h1>
+    <div class="team-members d-flex justify-content-evenly"  >
+    <div class="team-member" *ngFor="let member of teamMembers">
+      
+      <img [src]="member.image" [alt]="member.name">
+  
+      <h2>{{member.name}}</h2>
+      <p>{{member.title}}</p> 
+       <a [href]="member.gmail" style="display: inline; " target="_blank"><i class="bi bi-google" style="font-size:30px;color:rgb(231, 225, 225)"></i> </a>
+    </div>
+    </div>
+    </div>
+  </div>

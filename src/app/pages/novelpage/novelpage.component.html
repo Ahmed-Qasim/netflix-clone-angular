@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<body>
+    <div class="container">
+        <img src="https://localhost:7253/novel_images/{{novelDetailsResult?.novelImage}}" alt="">
+        <div class="textdata ">
+            <h2 dir="rtl" lang="ar" style="margin-top: 80px;">{{ novelDetailsResult?.novelName}}</h2>
+        </div>
+        <div>
+            <p class="description text-right" dir="rtl" lang="ar">
+                {{ novelDetailsResult?.novelDescription}}
+            </p>
+        </div>
+        
+        <div>
+            <button class=" btn btn-danger mt-5 " (click)="downloadFile()">Download</button>
+        </div>
+    </div>
+</body>

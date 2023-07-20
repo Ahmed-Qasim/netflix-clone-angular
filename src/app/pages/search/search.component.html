@@ -1,0 +1,62 @@
+<app-header></app-header>
+<div class="contain mt-5 p-5">
+
+    <!-- <form [formGroup]="searchForm" (ngSubmit)="submitForm()">
+        <div class="row">
+            <div class="col-lg-10">
+                <input type="text" class="form-control" placeholder="search you fav media here ... "
+                    formControlName="movieName">
+            </div>
+            <div class="col-lg-2 buttonsearch">
+                <button class="btn btn-danger button-search">
+                    Search
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div class="row mt-3">
+        <div class="row col-lg-4" *ngFor="let w of searchResult">
+            <div class="col-lg-3 mt-4 mb-4" *ngIf="w.poster_path">
+                <img src="https://image.tmdb.org/t/p/original/{{w.poster_path}}" class="rowimg largeposter"
+                    alt="Some sort of poster" [routerLink]="['/movie',w.id]">
+            </div>
+            <div class="col-lg-9 mt-4 mb-4">
+                <h4>{{w.original_title}}</h4>
+            </div>
+        </div>
+    </div>
+
+</div> -->
+
+    <input type="text" (keydown)="searchMovie()" [(ngModel)]="searchWord" class="form-control"
+        placeholder="type what you wish here..." />
+    <ng-container *ngIf="searchResult.length;else notFound">
+        <div class="row mt-3 ">
+            <div class="row col-lg-4  col-md-6 " *ngFor="let w of searchResult">
+                <div class="row col-lg-12">
+                    <div class="col-lg-3  mt-4 mb-4 " *ngIf="w.movieImage">
+                        <img src="https://localhost:7253/movie_images/{{w.movieImage}}"
+                            class="rowimg largeposter d-block" alt="Some sort of poster"
+                            [routerLink]="['/moviepage',w.movieID]">
+                    </div>
+                    <div class="col-lg-9  mt-4 mb-4">
+                        <h4>{{w.movieName}}</h4>
+                    </div>
+                </div>
+                <div class="row col-lg-12">
+                    <div class="col-lg-3  mt-4 mb-4" *ngIf="w.novelImage">
+                        <img src="https://localhost:7253/novel_images/{{w.novelImage}}" class="rowimg largeposter"
+                            alt="Some sort of poster" [routerLink]="['/novelpage',w.novelID]">
+                    </div>
+                    <div class="col-lg-9  mt-4 mb-4">
+                        <h4>{{w.novelName}}</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </ng-container>
+    <ng-template #notFound>
+        <p class='notFound'>Not Found</p>
+    </ng-template>

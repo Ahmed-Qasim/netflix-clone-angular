@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+body{
+    height: 100%;
+background-color: black;
+overflow-x: hidden;
+}

@@ -1,0 +1,35 @@
+
+.footer{
+    max-width: 100%;
+    margin: 10px 30px;
+    overflow: hidden;
+    padding: 15px;
+    border-top:2px solid gray ;
+    font-weight: bold;
+}
+
+.footer ,
+.footer a{
+    color: #999999;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 10px;
+}
+
+.footer li{
+    line-height: 2.4;
+    list-style: none;
+}
+.footer a:hover{
+    color: white;
+}
+

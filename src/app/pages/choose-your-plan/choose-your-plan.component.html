@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            Netflix
+        </title>
+    </head>
+    <body>
+   <div>
+    <div class="header w-100 d-flex  align-items-center justify-content-between">
+        <img src="/assets/images/logo.png" alt="" class="img-fluid">
+        <button class="btn "><a routerLink="/login">Sign In</a></button>
+    </div>
+
+    <div class="stepHeader-container" data-uia="header">
+    <div class="stepHeader" role="status">
+            <h1 class="stepTitle" data-uia="stepTitle">Choose the plan that’s right for you</h1>
+        </div>
+    </div>
+    <div class="changeAnytime">
+        <ul class="checkmark-group -compact" data-uia="checkmark-group">
+            <li class="checkmark-group--row -compact" data-uia="checkmark-group+row-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkmark-group--icon" aria-hidden="true" style="color:red;">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg>
+                    <span class="checkmark-group--text" data-uia="checkmark-group+row-0+content">Watch all you want. Ad-free.</span></li>
+                    <li class="checkmark-group--row -compact" data-uia="checkmark-group+row-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="color:red;" xmlns="http://www.w3.org/2000/svg" class="checkmark-group--icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg>
+                        <span class="checkmark-group--text" data-uia="checkmark-group+row-1+content">Recommendations just for you.</span></li><li class="checkmark-group--row -compact" data-uia="checkmark-group+row-2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkmark-group--icon" aria-hidden="true" style="color:red;"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg>
+                            <span class="checkmark-group--text" data-uia="checkmark-group+row-2+content">Change or cancel your plan anytime.</span>
+                        </li>
+                    </ul>
+    </div>
+   </div>
+   <div class="container">
+    <button id="Firstbutton" class="btn btn-danger buttonsize">
+        Basic
+    </button>
+    <button class="btn btn-danger buttonsize">
+        Standard
+    </button>
+    <button class="btn btn-danger buttonsize" style="margin-left: 3%;">
+        Premium
+    </button>
+    </div>
+    <table >
+        <tr>
+            <td class="firsttd">Monthly price</td>
+            <td class="text-center first">EGP 70</td>
+            <td class="text-center second">EGP 120</td>
+            <td class="text-center third">EGP 165</td>
+        </tr>
+        <tr>
+            <td class="firsttd">Video quality</td>
+            <td class="text-center first">Good</td>
+            <td class="text-center second">Better</td>
+            <td class="text-center third">Best</td>
+        </tr>
+        <tr>
+            <td class="firsttd">Resolution</td>
+            <td class="text-center first">720 p</td>
+            <td class="text-center second">1080 P</td>
+            <td class="text-center third">4K + HDR</td>
+        </tr>
+
+        <tr class="lastrow" style="border-bottom: 0px;">
+            <td class="firsttd">Watch on your TV, computer, mobile phone and tablet</td>
+            <td class="text-center first"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkmark-group--icon" aria-hidden="true" >
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg>
+                </td>
+            <td class="text-center second"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkmark-group--icon" aria-hidden="true" >
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg>
+                </td>
+            <td class="text-center third"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkmark-group--icon" aria-hidden="true" >
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg>
+                </td>
+        </tr>
+    </table>
+        <div>
+            <p>
+                HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <mark style="color: blue; background-color: white;"> Terms of Use </mark> more details.
+            </p>
+            <p>
+                Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.
+            </p>
+        </div>  
+        <button class="btn btn-danger text-center nextbutton">Next</button>   
+           
+    </body>
+    </html>

@@ -1,0 +1,27 @@
+/* div{
+    color:white;
+}
+
+css
+Copy code */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  
+  
+}
+
+.team-member {
+  width: 400px;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}

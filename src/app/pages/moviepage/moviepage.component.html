@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<body>
+    <div class="contain  p-2">
+        <div class="row">
+            <div class="col-lg-12 " *ngFor="let prd of movieDetails">
+
+                <div class="container-fluid">
+                    <img src="https://localhost:7253/movie_images/{{prd.movieBackDrop}}" alt="">
+                    <div class="centered">
+                        <h1>{{prd.movieName}}</h1>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mx-3" *ngFor="let prd of movieDetails">
+
+
+                <label>Description</label>
+                <p class="desc"> {{prd.movieDescription}}</p>
+                <label>Movie production date :</label>
+                <h5><i class="bi bi-calendar"></i> {{prd.movieDate}}</h5>
+                <label>Movie Rate :</label>
+                <h5> <i class="bi bi-star-fill"></i> {{prd.rate}}</h5>
+            </div>
+            <div class="col-lg-16 d-flex justify-content-center" *ngFor="let prd of movieDetails">
+                <video class="" controls src="https://localhost:7253/movie_videos/{{prd.movieVedio}}"></video>
+            </div>
+        </div>
+    </div>
+
+</body>

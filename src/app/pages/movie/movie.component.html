@@ -1,0 +1,154 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <label for="navigation" class="label">Jump to a section: </label>
+    <select id="dropdown" #select name="navigation" class="btn btn-danger dropdown-toggle"(change)="navigateToSection(select.value)">
+        <option value="section0">Select Category</option>
+        <option value="#section1">Action Movies</option>
+        <option value="#section2">Adventure Movies</option>
+        <option value="#section3">Decomentery Movies</option>
+        <option value="#section4">Comedy Movies</option>
+        <option value="#section5">Drama Movies</option>
+        <option value="#section6">Horror Movies</option>
+        <option value="#section7">Thriller Movies</option>
+    </select>
+    <div class="contain mt-3 py-1">
+        <div class="row">
+            <h5 class="text-white" id="section1">Action Movies</h5>
+            <div class="rowposter mt-3">
+                <ng-container *ngFor="let t of adventuremovies" class="roll">
+                    <img src="https://localhost:7253/movie_images/{{t.movieImage}}" class="rowimg largeposter" alt="..."
+                        [routerLink]="['/moviepage',t.movieID]">
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <div class="contain mt-3  py-1">
+        <div class="row">
+            <h5 class="text-white" id="section2">Adventures Movies</h5>
+            <div class="rowposter mt-3">
+                <ng-container *ngFor="let t of adventuremovies" class="roll">
+                    <img src="https://localhost:7253/movie_images/{{t.movieImage}}" class="rowimg largeposter" alt="..."
+                        [routerLink]="['/moviepage',t.movieID]">
+
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <div class="contain mt-3  py-1">
+        <div class="row">
+            <h5 class="text-white" id="section3">Decumentery Movies</h5>
+            <div class="rowposter mt-3">
+                <ng-container *ngFor="let t of decomentrymovies" class="roll">
+                    <img src="https://localhost:7253/movie_images/{{t.movieImage}}" class="rowimg largeposter" alt="..."
+                        [routerLink]="['/moviepage',t.movieID]">
+
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <div class="contain mt-3  py-1">
+        <div class="row">
+            <h5 class="text-white" id="section4">Comedy Movies</h5>
+            <div class="rowposter mt-3">
+                <ng-container *ngFor="let t of comedymovies" class="roll">
+                    <img src="https://localhost:7253/movie_images/{{t.movieImage}}" class="rowimg largeposter" alt="..."
+                        [routerLink]="['/moviepage',t.movieID]">
+
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <div class="contain mt-3 py-1">
+        <div class="row">
+            <h5 class="text-white" id="section5">Drama Movies</h5>
+            <div class="rowposter mt-3">
+                <ng-container *ngFor="let t of dramamovies" class="roll">
+                    <img src="https://localhost:7253/movie_images/{{t.movieImage}}" class="rowimg largeposter" alt="..."
+                        [routerLink]="['/moviepage',t.movieID]">
+
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <div class="contain mt-3 py-1">
+        <div class="row">
+            <h5 class="text-white" id="section6">Horror Movies</h5>
+            <div class="rowposter mt-3">
+                <ng-container *ngFor="let t of horrormovies" class="roll">
+                    <img src="https://localhost:7253/movie_images/{{t.movieImage}}" class="rowimg largeposter" alt="..."
+                        [routerLink]="['/moviepage',t.movieID]">
+
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <div class="contain mt-3 py-1" id="section7">
+        <div class="row">
+            <h5 class="text-white">Thriller Movies</h5>
+            <div class="rowposter mt-3">
+                <ng-container *ngFor="let t of thrillermovies" class="roll">
+                    <img src="https://localhost:7253/movie_images/{{t.movieImage}}" class="rowimg largeposter" alt="..."
+                        [routerLink]="['/moviepage',t.movieID]">
+
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<!-- <h2 class="txt-h2">Top 10 Movie in Egypt Today</h2>
+<div class="container"> 
+    <div class="left">
+        <img src="assets/images/eg1.jpg" alt="" class="img2">
+    </div>
+    <div class="right">
+        <img src="assets/images/1image.png" alt="" class="img2">
+    </div>
+    <div class="left">
+        <img src="assets/images/eg2.jpg" alt="" class="img2">
+    </div>
+    <div class="right">
+        <img src="assets/images/2image.png" alt="" class="img2">
+    </div>
+    <div class="left">
+        <img src="assets/images/egy3.jpg" alt="" class="img2">
+    </div>
+    <div class="right">
+        <img src="assets/images/3image.png" alt="" class="img2">
+    </div>
+    <div class="left">
+        <img src="assets/images/egy4.jpg" alt="" class="img2">
+    </div>
+    <div class="right">
+        <img src="assets/images/4image.png" alt="" class="img2">
+    </div>
+    <div class="left">
+        <img src="assets/images/egy5.jpg" alt="" class="img2">
+    </div>
+    <div class="right">
+        <img src="assets/images/5image.png" alt="" class="img2">
+    </div>
+    <div class="left">
+        <img src="assets/images/egy6.jpg" alt="" class="img2">
+    </div>
+    <div class="right">
+        <img src="assets/images/6image.png" alt="" class="img2">
+    </div>
+    <div class="left">
+        <img src="assets/images/egy7.jpg" alt="" class="img2">
+    </div>
+    <div class="right">
+        <img src="assets/images/7image.png" alt="" class="img2">
+    </div>
+    <div class="left">
+        <img src="assets/images/egy8.jpg" alt="" class="img2">
+    </div>
+    <div class="right">
+        <img src="assets/images/8image.png" alt="" class="img2">
+    </div>
+</div> -->

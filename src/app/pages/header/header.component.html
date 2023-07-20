@@ -1,0 +1,59 @@
+<!-- navbar start -->
+<nav class="navbar navbar-expand-lg netflix-navbar fixed-top" [ngStyle]="navBg">
+    <div class="container-fluid">
+        <div class="netflix-row ">
+            <div class="left d-flex align-items-center">
+                <a class="navbar-brand" routerLink="/home"><img src="../assets/images/logo.png" alt=""></a>
+                <!-- dropdown -->
+                <div class="dropdown  netflix-dropdown-box">
+                    <button class="dropdown-toggle netflix-dropdown" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Browse
+                    </button>
+                   
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/movies">Movies</a></li>
+                        <li><a class="dropdown-item" routerLink="/novel">Novels</a></li>
+                        <li><a class="dropdown-item" href="#">others</a></li>
+                    </ul>
+                </div>
+            
+               
+                <div class="netflix-nav">
+                    <section>
+                        <button routerLink="/home">Home</button>
+                        <button routerLink="/movies">Movies</button>
+                        <button routerLink="/novel">Novels</button>
+                        <button>Else</button>
+                    </section>
+                </div>
+            </div>
+            
+            <div class="right d-flex align-items-center">
+                <a routerLink="/search"> <i class="bi bi-search"></i></a>
+               
+                <a routerLink="/AboutUs"><i class="bi bi-info-circle" ></i></a> 
+               
+                
+                <!-- <i class="bi bi-search"></i> -->
+
+                <section class="netflix-profile">
+                    <div class="dropdown ">
+                        <button class="dropdown-toggle profile-dropdown" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="UserName">Hello, {{userName}}</li>
+            
+                            <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+
+                        </ul>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+    </div>
+</nav>

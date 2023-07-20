@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: black;
+	color: #f9efef;
+    
+}
+
+.container{
+    width: 100%;
+    margin-bottom:90vh;
+    height: 30vh;
+    
+}
+img{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 30%;
+   
+}
+.textData{
+position: absolute;
+left: 50%;
+
+top: 20%;
+right: 10%;
+}
+p{
+    font-size: 25px;
+}
+mark{
+    color: red;
+    background-color: black;
+}
+.description{
+    position :absolute;
+    right: 10%;
+    top: 30%;
+    left:50%;
+    font-size: 25px;  
+}
+button{
+    position: absolute;
+    top: 90%;
+    left:45%;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    margin-bottom:50px;
+    background-color: red;
+}
+
+

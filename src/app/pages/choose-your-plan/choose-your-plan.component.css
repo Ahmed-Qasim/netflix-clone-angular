@@ -1,0 +1,93 @@
+
+body {
+	font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: #f6f6f6;
+	color: black;
+}
+.header {
+    padding: 20px 50px;
+}
+
+.header img {
+    width: 15%;
+}
+.btn,
+.btn:hover {
+    background-color: rgb(214, 17, 17);
+    letter-spacing: 1.3px;
+    font-size: 20px;
+    margin: 35px 0 10px 0;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+h1{
+    font-size: 15px;
+    margin-left: 15%;
+}
+ul{
+	list-style-type: none;
+	margin-left: 15%;
+	font-size: 18px;
+	margin-top: 5px;
+}
+.bi{
+	color: red;
+	font-size:20px;
+
+}
+#Firstbutton{
+	margin-left:38%;
+
+}
+.btn.buttonsize{
+	margin-top: 2%;
+	height: 100px;
+	width: 120px;
+	opacity: 0.7;
+	border-radius: 0%;
+	margin-left: 5%;
+}
+table{
+	margin-left: 15%;
+	width:55%;
+	height:250px;
+    color: black;
+    font-size: 17px;
+}
+table tr{
+	border-bottom:1px solid rgb(161, 157, 157);
+}
+ .firsttd{
+	width: 42%;
+}
+td{
+width: 22%;
+}
+.lastrow{
+	border-bottom: 0px;
+}
+p{
+	margin-left: 15%;
+	width: 60%;
+	font-size: 13px;
+}
+.btn.nextbutton{
+	margin-left: 40%;
+	width: 20%;
+	margin-top: 3%;
+	margin-bottom: 5%;
+	height: 7%;
+	font-size: 20px;
+	opacity: 1;
+	background-color: rgb(181, 13, 13);
+}
+.checkedbutton{
+	opacity: 1;
+}
+.checkedtd{
+	color: red;
+}

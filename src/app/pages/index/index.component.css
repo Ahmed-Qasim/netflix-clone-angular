@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* =====Background Page======= */
+.main_page {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/images/2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main_page .overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* =======THE HEADER==== */
+.header {
+    padding: 20px 50px;
+}
+
+.header img {
+    width: 100px;
+}
+
+.contents div {
+    flex-direction: column;
+    color: #fff;
+}
+
+.contents h1 {
+    font-size: 60px;
+    width: 700px;
+    margin: 20px auto;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+}
+
+.contents p {
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    margin-bottom: 20px;
+}
+
+/* ====BUTTONS==== */
+.btn{
+    width: 120px;
+    height: 50px;
+    background-color: red;
+    letter-spacing: 1.3px;
+    font-size: 20px;
+    padding: auto;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ==========START ENJOY SECTIONS======== */
+.enjoy,
+.acc {
+    border-bottom: 5px solid #222;
+    border-top: 5px solid #222;
+    padding: 80px 0;
+    background-color: #000;
+}
+
+.enjoy h2,
+.acc .container>h2 {
+    font-size: 30px;
+    font-family: 600;
+    letter-spacing: 1.2px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.enjoy p {
+    font-size: 1.8rem;
+    font-family: 600;
+    letter-spacing: 1.2px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+}
+.img-circle{
+    clip-path: circle();
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+/* ==========END ENJOY SECTIONS======== */
+
+/* ====START ACCORDION SECTION====== */
+.acc .accordion .card {
+    background-color: #303030 !important;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.accordion .card h2 {
+    font-size: 15px;
+    letter-spacing: 1.2px;
+
+}
+
+.bigheader{
+    color: white;
+    font-size: 4.5rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.accbtn{
+    width: 100%;
+    background-color: #303030 !important ;
+    font-size: 20px;
+    color: white !important;
+}
+
+.accordion .card p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 23px;
+}
+#frec{
+    font-size: 60px;
+    color: #fff;
+
+}
+
+/* ====END ACCORDION SECTION====== */
+
+/* =======START FOOOTEEERRR====== */
+footer {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 35px 85px;
+}
+
+footer p {
+    color: #757575;
+    font-size: 21px;
+    letter-spacing: 1.1px;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 24%;
+    padding-right: 12px;
+    font-size: 15px;
+    color: #757575;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #757575;
+}
+
+li a:hover {
+    text-decoration: underline;
+    font-size: 15px;
+    color: #757575;
+}
+
+/* =======END FOOOTEEERRR====== */
+/* ============START MEDIA QUERY======= */
+@media (max-width: 768px) {
+    .form {
+        width: 100% !important;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    form {
+        width: 100% !important;
+    }
+
+    .form .wrapper {
+        width: 100%;
+    }
+
+    footer ul li {
+        width: 49%;
+    }
+}
+
+/* ============END MEDIA QUERY======= */
+.form-control:focus,
+.btn:focus,
+.is-invalid:focus,
+.is-valid:focus {
+    outline: none;
+    box-shadow: none !important;
+    border: none !important;
+}

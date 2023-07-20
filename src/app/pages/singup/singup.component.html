@@ -1,0 +1,80 @@
+<body>
+
+    <div class="main_page">
+        <div class="overlay">
+            <div class="header w-100">
+                <img src="/assets/images/logo.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="form d-flex align-items justify-content-center w-100 mb-0 mb-md-5">
+                <form [formGroup]=" RegisterForm" (ngSubmit)="submit()" class="form-row">
+                    <h2>Sign Up</h2>
+                    <div class="wrapper mb-5">
+                        <div class="input_data">
+                            <input type="text" id="firstName" required formControlName="Fname">
+                            <div id="firstNameMsg" *ngIf="Fname && Fname.invalid && Fname.touched"
+                                style="color:rgb(136, 23, 23)">
+                                Your Name must contain between 3 and 10 chars!
+                            </div>
+                            
+                            <label for="">First Name</label>
+                        </div>
+                    </div>
+                    <div class="wrapper mb-5">
+                        <div class="input_data">
+                            <input type="text" id="lastName" required formControlName="Lname">
+                            <div id="lastNameMsg" *ngIf="Lname && Lname.invalid 
+                            && Lname.touched" style="color:rgb(136, 23, 23)">
+                                Your Name must contain between 3 and 10 chars!
+                            </div>
+                            <label for="">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="wrapper mb-5">
+                        <div class="input_data">
+                            <input type="text" id="email" required formControlName="email">
+                            <div id="emailMsg" *ngIf="email && email.invalid && email.touched"
+                                style="color:rgb(136, 23, 23)">
+                                Please enter a valid email !
+                            </div>
+                            <div id="firstNameMsg" *ngIf="errorMessage"
+                                style="color:rgb(136, 23, 23)">
+                               {{errorMessage}}
+                            </div>
+                            <label for="">Email </label>
+                        </div>
+                    </div>
+                    <div class="wrapper mb-5">
+                        <div class="input_data">
+                            <input type="password" id="password" required formControlName="password">
+                            <div id="passMsg" *ngIf="password && password.invalid && password.touched"
+                                style="color:rgb(136, 23, 23)">
+                                Your password must contain between 5 and 20 characters!
+                            </div>
+                            <label for="">Password</label>
+                        </div>
+                    </div>
+                    <p class="text-success d-none text-center my-3" id="confirmMsg">Success</p>
+                    <p class="text-success d-none text-center my-3" id="accountExistMsg">This account is exist ! Try
+                        another one.
+                    </p>
+                    <p class="text-success d-none text-center my-3" id="tryAgainMsg">Sign up failed ! Try again</p>
+
+                    <button class="btn" id="signupBtn" type="submit" [disabled]=" RegisterForm.invalid">Sign Up</button>
+                    <div class="remember d-flex align-items-center justify-content-between w-100">
+
+                        <span><a href="#">Need help?</a></span>
+                    </div>
+                    <div class="new py-4 d-flex justify-content-between">
+                        You Have An Email?
+                        <a routerLink="/sign-in">Sign In now</a>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
